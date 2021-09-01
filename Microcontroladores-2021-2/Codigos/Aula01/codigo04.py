@@ -10,7 +10,7 @@ def gerarNumeros(quant_numeros,minimo,maximo):
         if sorteio not in numeros_sorteados:
             numeros_sorteados.append(sorteio)
     #coloca a lsta em ordem
-    numeros_sorteados.sort(reverse=True)
+    numeros_sorteados.sort()
     return numeros_sorteados
 numeros_mega_sena = gerarNumeros(6,1,60)
 print('mega sena:',numeros_mega_sena)
